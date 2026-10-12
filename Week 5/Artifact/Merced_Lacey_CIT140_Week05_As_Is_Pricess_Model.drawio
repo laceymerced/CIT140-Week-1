@@ -1,0 +1,188 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Current Process" id="w05-process">
+    <mxGraphModel dx="1488" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=24;fontStyle=1;fontColor=#183c43;align=left;" value="CIT 140 · Week 5 | Current Appointment Process" vertex="1">
+          <mxGeometry height="40" width="1080" x="40" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="instructions" parent="1" style="text;html=1;fontSize=13;align=left;whiteSpace=wrap;" value="Replace this line with your process start and end. Add supported steps and decisions in the responsible role&#39;s lane. Label decision branches and source IDs." vertex="1">
+          <mxGeometry height="45" width="1080" x="40" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="visitor" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#e8f1ef;strokeColor=#5a7c7d;fontSize=15;fontStyle=1;" value="Visitor" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-1" parent="visitor" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Start: Request appointment" vertex="1">
+          <mxGeometry height="45" width="130" x="170" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-14" parent="visitor" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="End" vertex="1">
+          <mxGeometry height="45" width="130" x="940" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="scheduling" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#e8f1ef;strokeColor=#5a7c7d;fontSize=15;fontStyle=1;" value="Scheduling" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-26" edge="1" parent="scheduling" source="_himKf8qVM8q7PXRXl0X-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-2" parent="scheduling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Record requested time &amp;amp; support preferences&amp;nbsp;&lt;div&gt;W05-S01&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="170" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-27" edge="1" parent="scheduling" source="_himKf8qVM8q7PXRXl0X-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-41" connectable="0" parent="_himKf8qVM8q7PXRXl0X-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="0.0316" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-3" parent="scheduling" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Booking details complete?" vertex="1">
+          <mxGeometry height="65" width="100" x="340" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-4" parent="scheduling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Request readiness decision&lt;div&gt;W05-S01&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="500" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="clinical" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#e8f1ef;strokeColor=#5a7c7d;fontSize=15;fontStyle=1;" value="Clinical&lt;br&gt;Operations" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-29" edge="1" parent="clinical" source="_himKf8qVM8q7PXRXl0X-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-6" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Check room &amp;amp; clinician availability&lt;div&gt;W05-S02&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="500" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-7" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Make readiness decision" vertex="1">
+          <mxGeometry height="45" width="130" x="680" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-5" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Contact visitor for clarification&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="330" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="intake" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#e8f1ef;strokeColor=#5a7c7d;fontSize=15;fontStyle=1;" value="Intake" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-31" edge="1" parent="intake" source="_himKf8qVM8q7PXRXl0X-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-8" parent="intake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Visitor Arrives&lt;div&gt;W05-S03&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="330" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-32" edge="1" parent="intake" source="_himKf8qVM8q7PXRXl0X-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-9" parent="intake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Local appointment &amp;amp; check status" vertex="1">
+          <mxGeometry height="45" width="130" x="510" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-10" parent="intake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Confirm support arrangments" vertex="1">
+          <mxGeometry height="45" width="130" x="860" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-36" edge="1" parent="intake" source="_himKf8qVM8q7PXRXl0X-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-43" connectable="0" parent="_himKf8qVM8q7PXRXl0X-36" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.0386" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-15" parent="intake" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Status Ready?" vertex="1">
+          <mxGeometry height="65" width="100" x="700" y="17.5" as="geometry" />
+        </mxCell>
+        <mxCell id="handoff" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#e8f1ef;strokeColor=#5a7c7d;fontSize=15;fontStyle=1;" value="Next staff team" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-11" parent="handoff" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Exception review&lt;div&gt;W05-S04&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="510" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-34" edge="1" parent="handoff" source="_himKf8qVM8q7PXRXl0X-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-12" parent="handoff" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Contact scheduling &amp;amp; clinical operations&lt;div&gt;W05-S04&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="130" x="691" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-13" parent="handoff" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Pass visitor to next staff team" vertex="1">
+          <mxGeometry height="45" width="130" x="960" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="text;html=1;fontSize=13;align=left;" value="Symbol key (copy these shapes into your lanes; they are not case steps)" vertex="1">
+          <mxGeometry height="30" width="1080" x="40" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="l-activity" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Activity" vertex="1">
+          <mxGeometry height="45" width="130" x="370" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="l-decision" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Decision?" vertex="1">
+          <mxGeometry height="65" width="100" x="590" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="l-arrow" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#5a7c7d;" value="Labeled sequence">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="735" as="sourcePoint" />
+            <mxPoint x="980" y="735" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l-start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Start / end" vertex="1">
+          <mxGeometry height="45" width="130" x="170" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-25" edge="1" parent="1" source="_himKf8qVM8q7PXRXl0X-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-28" edge="1" parent="1" source="_himKf8qVM8q7PXRXl0X-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-30" edge="1" parent="1" source="_himKf8qVM8q7PXRXl0X-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-33" edge="1" parent="1" source="_himKf8qVM8q7PXRXl0X-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-44" connectable="0" parent="_himKf8qVM8q7PXRXl0X-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No / Held" vertex="1">
+          <mxGeometry relative="1" x="-0.4747" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-35" edge="1" parent="1" source="_himKf8qVM8q7PXRXl0X-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-37" edge="1" parent="1" source="_himKf8qVM8q7PXRXl0X-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=0;" target="_himKf8qVM8q7PXRXl0X-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-38" edge="1" parent="1" source="_himKf8qVM8q7PXRXl0X-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_himKf8qVM8q7PXRXl0X-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-42" connectable="0" parent="_himKf8qVM8q7PXRXl0X-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.3613" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_himKf8qVM8q7PXRXl0X-40" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#5a7c7d;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="560" as="sourcePoint" />
+            <mxPoint x="1070" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Scope and Findings" id="w05-findings">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=24;fontStyle=1;fontColor=#183c43;align=left;" value="Week 5 | Scope and Findings" vertex="1">
+          <mxGeometry height="40" width="1070" x="45" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="scope" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="&lt;b&gt;1 · Process scope&lt;/b&gt;&lt;br&gt;This model shows the current appointment process from the visitor requesting an appointment through Scheduling, Clinical Operations and Intake. The process starts when a visitor requests an appointment and ends when intake either moves the visitor forward or begins exception review. Roles included are Visitor, Scheduling, Clinical Operations and Intake. Changes or improvements to the system are outside the scope of this current process model." vertex="1">
+          <mxGeometry height="110" width="1070" x="45" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="walkthrough" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;fillColor=#fff7ee;strokeColor=#95694b;" value="&lt;b&gt;2 · Check the two paths&lt;/b&gt;&lt;br&gt;In the ordinary path, the request is recorded, missing information is clarified if needed, Clinical Operations checks readiness and Intake checks the appointment status when the visitor arrives. In the incident path, a held slot was recorded and a booking confirmation was sent but Intake still showed the appointment as held when the visitor arrived. W05-S04 shows that the available trace doesn&#39;t contain a completed readiness decision reaching Intake before arrival. The evidence shows the records disagree, but it doesn&#39;t prove why the readiness decision was missing." vertex="1">
+          <mxGeometry height="140" width="1070" x="45" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="sources" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="&lt;b&gt;3 · Evidence and model review&lt;/b&gt;&lt;br&gt;The model is supported by W05-S01 for Scheduling, W05-S02 for Clinical Operations, W05-S03 for Intake and W05-S04 for the incident record review. I checked the model against the records and kept the readiness handoff marked as unclear instead of making up a missing step. The remaining uncertainty is why the completed readiness decision didn&#39;t reach Intake before the visitor arrived. Clinical Operations and the record review would be needed to resolve that." vertex="1">
+          <mxGeometry height="140" width="1070" x="45" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="reflection" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;fillColor=#fff7ee;strokeColor=#95694b;" value="&lt;b&gt;4 · Learning reflection (reuse your Discord paragraph)&lt;/b&gt;&lt;br&gt;The process became clear because I could se which department is responsible for each step and where the handoffs occur. The main unclear point is the readiness handoff because W05-S04 shows that Intake still saw held even though a booking confirmation had been issued. This proves model is different from Week 4 because it described what the system must do, while this model shows how the work actually happens now and where the current process can break down." vertex="1">
+          <mxGeometry height="140" width="1070" x="45" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="evidence" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="&lt;b&gt;5 · Portfolio evidence&lt;/b&gt;&lt;br&gt;[Merced_Lacey_CIT140_Week05_As_Is_process_Model.drawio&lt;div&gt;Week05/Evidence/&lt;/div&gt;&lt;div&gt;Week05_Discord_Post.jpg.]&lt;br&gt;Save the .drawio file; export both pages as one PDF; check readability; commit and push.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="105" width="1070" x="45" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
