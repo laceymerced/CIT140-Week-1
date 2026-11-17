@@ -1,0 +1,275 @@
+<mxfile host="app.diagrams.net" pages="4">
+  <diagram id="w09-0" name="01 Choice">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=0;fontSize=26;fontStyle=1;align=left;verticalAlign=top;" value="CIT 140 Week 9 — 01 Choice" vertex="1">
+          <mxGeometry height="50" width="1000" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="prompt" parent="1" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=16;" value="Problem:&#xa;Archive requests can be handed off before the destination and reference information are confirmed. Missing or incorrect information can cause delays and requests to be sent back for clarification.&#xa;&#xa;Boundary:&#xa;This design covers the request from the service desk through delivery to the correct keeper or return to the requester for clarification. Retrieving archive contents, payments and replacing archive equipment are outside the design.&#xa;&#xa;Approach A – Improve the existing register:&#xa;Keep the spreadsheet and paper process but add required fields, clearer status rules, staff checks and delivery confirmation. This would be easier for staff because they already know the current system but it would still depend on manual checks and handoffs.&#xa;&#xa;Approach B – Small request interface:&#xa;Create a simple request interface with required fields, status tracking, correction steps and role based information. This could prevent missing information earlier and make the request easier to track but it would require training and implementation.&#xa;&#xa;Choice:&#xa;I choose Approach B which is the small request interface because it gives clearer checks before a request is handed off and makes missing information easier to correct.&#xa;&#xa;Tradeoff:&#xa;The main tradeoff is that the new interface would require training and setup even though Approach A would be easier to continue using right away." vertex="1">
+          <mxGeometry height="130" width="1000" x="40" y="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="w09-1" name="02 Design">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=0;fontSize=26;fontStyle=1;align=left;verticalAlign=top;" value="CIT 140 Week 9 — 02 Design" vertex="1">
+          <mxGeometry height="50" width="1000" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="prompt" parent="1" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=16;" value="Proposed model OR prototype. Add roles, information, labeled decisions/states, normal route, clarification and correction route. Include a text route description." vertex="1">
+          <mxGeometry height="130" width="1000" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-1" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=60;" value="Desk Clerk" vertex="1">
+          <mxGeometry height="390" width="1060" x="20" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-20" edge="1" parent="Rg5_dtprir85ZVIwYO1j-1" source="Rg5_dtprir85ZVIwYO1j-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Rg5_dtprir85ZVIwYO1j-18" value="">
+          <mxGeometry relative="1" x="0.0286" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-2" parent="Rg5_dtprir85ZVIwYO1j-1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="Desk Clerk - New Request" vertex="1">
+          <mxGeometry height="300" width="720" x="150" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-3" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Request ID" vertex="1">
+          <mxGeometry height="20" width="180" x="30" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-4" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Requester Name:" vertex="1">
+          <mxGeometry height="20" width="180" x="30" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-5" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Contact:" vertex="1">
+          <mxGeometry height="20" width="180" x="30" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-6" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Archive Reference:" vertex="1">
+          <mxGeometry height="20" width="180" x="30" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-7" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Destination:" vertex="1">
+          <mxGeometry height="20" width="180" x="30" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-8" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Request Summary:" vertex="1">
+          <mxGeometry height="20" width="180" x="30" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-9" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="20" width="440" x="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-10" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="20" width="440" x="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-11" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="20" width="440" x="260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-12" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="20" width="440" x="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-13" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="20" width="440" x="260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-14" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="20" width="440" x="260" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-15" parent="Rg5_dtprir85ZVIwYO1j-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Check Request" vertex="1">
+          <mxGeometry height="30" width="260" x="190" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-17" edge="1" parent="Rg5_dtprir85ZVIwYO1j-1" source="Rg5_dtprir85ZVIwYO1j-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-16" parent="Rg5_dtprir85ZVIwYO1j-1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" value="Start" vertex="1">
+          <mxGeometry height="50" width="50" x="80" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-18" parent="Rg5_dtprir85ZVIwYO1j-1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Complete&lt;div&gt;+&lt;/div&gt;&lt;div&gt;Correct&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="90" x="900" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-41" parent="Rg5_dtprir85ZVIwYO1j-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="960" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-62" parent="Rg5_dtprir85ZVIwYO1j-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="910" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-28" edge="1" parent="1" source="Rg5_dtprir85ZVIwYO1j-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.869;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="Rg5_dtprir85ZVIwYO1j-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Needs clarification&lt;div&gt;(return to requestor)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="110" x="940" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-24" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=60;" value="Runner" vertex="1">
+          <mxGeometry height="130" width="1060" x="20" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-38" edge="1" parent="Rg5_dtprir85ZVIwYO1j-24" source="Rg5_dtprir85ZVIwYO1j-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Rg5_dtprir85ZVIwYO1j-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-30" parent="Rg5_dtprir85ZVIwYO1j-24" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Receive Request&lt;div&gt;(Ready for Dispatch)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="280" x="150" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-31" parent="Rg5_dtprir85ZVIwYO1j-24" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Deliver to Destination Keeper" vertex="1">
+          <mxGeometry height="75" width="280" x="590" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-25" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=60;" value="Destination&amp;nbsp;&lt;div&gt;Keeper&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="1060" x="20" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-35" edge="1" parent="Rg5_dtprir85ZVIwYO1j-25" source="Rg5_dtprir85ZVIwYO1j-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Rg5_dtprir85ZVIwYO1j-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-32" parent="Rg5_dtprir85ZVIwYO1j-25" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Receive + Verify Archive Request" vertex="1">
+          <mxGeometry height="75" width="280" x="150" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-36" edge="1" parent="Rg5_dtprir85ZVIwYO1j-25" source="Rg5_dtprir85ZVIwYO1j-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Rg5_dtprir85ZVIwYO1j-34" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-33" parent="Rg5_dtprir85ZVIwYO1j-25" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Mark Complete&lt;div&gt;Delivered)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="280" x="590" y="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-34" parent="Rg5_dtprir85ZVIwYO1j-25" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" value="End" vertex="1">
+          <mxGeometry height="55" width="60" x="940" y="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-26" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="120" width="960" x="70" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-63" parent="Rg5_dtprir85ZVIwYO1j-26" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Route Description: The desk clerk enters a new archive request and checks it for completeness and accuracy. If information is missing or incorrect, the request is requested to the requester for clarification. If complete the request is sent to a runner for delivery to the destination keeper where it is verified and marked complete" vertex="1">
+          <mxGeometry height="55" width="930" x="15" y="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-27" edge="1" parent="1" source="Rg5_dtprir85ZVIwYO1j-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Rg5_dtprir85ZVIwYO1j-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-37" edge="1" parent="1" source="Rg5_dtprir85ZVIwYO1j-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Rg5_dtprir85ZVIwYO1j-33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Rg5_dtprir85ZVIwYO1j-39" edge="1" parent="1" source="Rg5_dtprir85ZVIwYO1j-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;curveGeometry=1;entryX=0.839;entryY=-0.007;entryDx=0;entryDy=0;entryPerimeter=0;" target="Rg5_dtprir85ZVIwYO1j-30">
+          <mxGeometry relative="1" x="-0.7778" as="geometry">
+            <Array as="points">
+              <mxPoint x="965" y="597" />
+            </Array>
+            <mxPoint x="420" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="w09-2" name="03 Traceability">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=0;fontSize=26;fontStyle=1;align=left;verticalAlign=top;" value="CIT 140 Week 9 — 03 Traceability" vertex="1">
+          <mxGeometry height="50" width="1000" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="prompt" parent="1" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=top;fontSize=16;" value="For EACH AR-01 through AR-06: source / design element or page / reason / proposed check. Explain current vs proposed, data quality and role access." vertex="1">
+          <mxGeometry height="130" width="1000" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-1" parent="1" style="shape=internalStorage;whiteSpace=wrap;html=1;backgroundOutline=1;dx=80;dy=40;" value="" vertex="1">
+          <mxGeometry height="690" width="1060" x="20" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Requirement" vertex="1">
+          <mxGeometry height="30" width="60" x="30" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Source" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="W09-S02/S&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;01&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;W09-S02/S&lt;span style=&quot;background-color: transparent;&quot;&gt;01&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;W09-S02/S&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;01&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;W09-S02/S&lt;span style=&quot;background-color: transparent;&quot;&gt;01&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;W09-S02/S&lt;span style=&quot;background-color: transparent;&quot;&gt;01&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;W09-S02/S&lt;span style=&quot;background-color: transparent;&quot;&gt;01&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="630" width="90" x="105" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Design Element / Page" vertex="1">
+          <mxGeometry height="30" width="130" x="235" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Why It&#39;s Included" vertex="1">
+          <mxGeometry height="30" width="160" x="470" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Proposed Check" vertex="1">
+          <mxGeometry height="30" width="130" x="830" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="AR-01&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;AR-02&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;AR-03&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;AR-04&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;AR-05&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;AR-06&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="610" width="60" x="30" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="02 Design - Desk Clerk&lt;div&gt;New Request form&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;02Design - Complete + Correct? (Decision)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;02 - Needs Clarification&amp;nbsp;&lt;/div&gt;&lt;div&gt;(return to requester)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;02 Design - Receive Request&lt;/div&gt;&lt;div&gt;(Runner)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;02 Design - Receive + Verify&lt;/div&gt;&lt;div&gt;Destination Keeper)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;02 Design - Mark Complete&lt;/div&gt;&lt;div&gt;(Delivered)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="630" width="160" x="220" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Makes sure every request has an ID, requester, contact, reference, destination and summary.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Checks that the request is complete and accurate before it moves forward.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Returns incomplete or incorrect requests to the requester for clarification.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Shows the handoff to the runner so the request can be delivered.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Confirms the destination keeper receives and verifies the request.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Records completion so the request is closed and tracked.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="620" width="300" x="400" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Check that NO1 includes all six required fields.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Test a request with all fields completed and one with missing data to confirm the decision works.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Verify an incomplete request returns to the requester.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Confirm the request is routed to the runner after it is approved.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Check that the destination keeper can receive and verify the request.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Confirm the request can be marked complete after delivery.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="620" width="330" x="730" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-16" edge="1" parent="1" source="-IUhTvKspN_lyEpJ_DB_-1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.669;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;" target="-IUhTvKspN_lyEpJ_DB_-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="570" y="500" as="sourcePoint" />
+            <mxPoint x="620" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-17" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.669;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="840" as="sourcePoint" />
+            <mxPoint x="401" y="203" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-18" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.669;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220" y="847" as="sourcePoint" />
+            <mxPoint x="221" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0.001;exitY=0.139;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.003;entryY=0.142;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="19.999999999999947" y="300" as="sourcePoint" />
+            <mxPoint x="1082.12" y="302.07000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-22" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0.001;exitY=0.139;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.003;entryY=0.142;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="18" y="400" as="sourcePoint" />
+            <mxPoint x="1080" y="402" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-23" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0.001;exitY=0.139;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.003;entryY=0.142;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="20" y="510" as="sourcePoint" />
+            <mxPoint x="1082" y="512" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-24" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0.001;exitY=0.139;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.003;entryY=0.142;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="20" y="610" as="sourcePoint" />
+            <mxPoint x="1082" y="612" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IUhTvKspN_lyEpJ_DB_-26" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0.001;exitY=0.139;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.003;entryY=0.142;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="20" y="710" as="sourcePoint" />
+            <mxPoint x="1082" y="712" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="w09-3" name="04 Walkthroughs">
+    <mxGraphModel dx="1414" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=0;fontSize=26;fontStyle=1;align=left;verticalAlign=top;" value="CIT 140 Week 9 — 04 Walkthroughs" vertex="1">
+          <mxGeometry height="50" width="1000" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="06RaT2ZhTYa7rH1fHNC1-46" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="NO1" vertex="1">
+          <mxGeometry height="265" width="1000" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="06RaT2ZhTYa7rH1fHNC1-47" parent="06RaT2ZhTYa7rH1fHNC1-46" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;&quot;&gt;&lt;b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Step&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Action&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;1&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;Desk clerk enters the request information.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;2&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;Desk clerk checks that the request is complete and correct.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;3&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;The complete request is sent to the runner.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;4&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;The runner delivers the request to the destination keeper.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;5&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;The destination keeper receives and verifies the request.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;6&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;The request is marked complete/delivered.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;Expected Outcome:&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;The complete request reaches the correct destination and is marked complete.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;Gap found:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;No major gap found in the normal route.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;Revistion / supported no-change&lt;/b&gt;:&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;No revision needed after NO1 walkthough.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="225" width="970" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="06RaT2ZhTYa7rH1fHNC1-48" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="E01" vertex="1">
+          <mxGeometry height="340" width="1000" x="40" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="06RaT2ZhTYa7rH1fHNC1-49" parent="06RaT2ZhTYa7rH1fHNC1-48" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Before correction&lt;/b&gt;:&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.Desk clerk enters request Q-242.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2. Reference CK-099 isn&#39;t found and destination is blank.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3. Request can&#39;t be marked ready for dispatch.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;4. System sends request to clarification state.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Supplied correction:&lt;/b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Requester provides reference CK-042 and destination east records.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;After corretion:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;5. Desk clerk updates the request but preserves the original issue and correction history.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;6. Request is rechecked and marked ready for dispatch.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;7. Runner delivers request to east records.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;8. Destination keeper receives it and the request is marked complete.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Outcome:&lt;/b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;The corrected request rejoins the process and reaches the right keeper.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Gap found:&lt;/b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;The design must clearly preserve correction history and block dispatch until missing information is fixed.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Revistion:&lt;/b&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Keep a visible clarification state and correction history in the design.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="970" x="10" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="06RaT2ZhTYa7rH1fHNC1-50" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Assumption / Risk / Next Check" vertex="1">
+          <mxGeometry height="100" width="1000" x="40" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="06RaT2ZhTYa7rH1fHNC1-51" parent="06RaT2ZhTYa7rH1fHNC1-50" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;&lt;b&gt;Assumption:&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Staff follow the proposed statuses and handoff steps.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;Risk:&lt;/b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;The workflow hasn&#39;t been tested in a live archive setting.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;Next check:&lt;/b&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Walk both routes with staff to confirm handoffs, statuses and correction handling.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="990" x="10" y="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
